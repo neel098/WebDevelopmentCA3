@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Events|Bug Bounty and Penetration Testing</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale  =1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        .jumbotron{
+            background-image: url(Cover_Photo.JPG);
+            background-size: 100%;
+            height: 500px;
+            background-attachment: fixed;
+            opacity: 0.8;
+            margin-top: 51px;
+            
+        }
+        #tag_line{
+            text-align: center;
+        }
+        .hello{
+            position: sticky;
+            border-radius: 0;
+        }
+        .main_tab{
+            text-align: center;
+        }
+        .main_tab_subtitle{
+            text-align: center;
+        }
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img class="img-responsive" src="Yuvaa_Round.png" style="position: relative;top:-10px; height:50px;"></a>
+    </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav" style="float: right;">
+      <li class="active"><a href="final_main_page.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="Events.html">Events</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+    </ul>
+      </div>
+  </div>
+    </nav>
+    <div>
+    <h1 style="margin-top: 70px;text-align: center">Bug Bounty and Penetration Testing</h1>
+    </div>
+    <div class="container-fluid">
+    <div class="row">
+  <div class="column">
+    <img src="DSC_0167.JPG"  style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="DSC_0174.JPG"  style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="DSC_0182.JPG"  style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="DSC_0163.JPG"  style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+</div>
+    
+    <div>
+        <h1 style="margin-left: 50px">About</h1>
+        <p style="margin-left: 50px">Bug Bounty and Penetration Testing was a free Session to make Students aware about the opportunities in the field. <br>
+        It included how to start your journey in this field.<br>
+        Categories of different Bounties by Organizations<br>
+        Scurity Flaws<br>
+        and live demonstration of finding bugs on a Website.</p>
+        <p style="margin-left: 50px">
+        Date:- 04 November 2019
+        </p>
+    </div>
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+    
+    </body>
+</html>
